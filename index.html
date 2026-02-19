@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLUFFILAS - Dessert Store</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <div class="hero-pattern"></div>
+        </div>
+        <div class="hero-content">
+            <span class="hero-badge">✨ Premium Quality</span>
+            <h1 class="hero-title">Indulge in Sweet Perfection</h1>
+            <p class="hero-subtitle">Handcrafted FLUFFILAS with the finest ingredients. Every bite is a moment of pure bliss.</p>
+            <div class="hero-buttons">
+                <a href="#menu" class="hero-btn primary">View Menu</a>
+                <a href="#about" class="hero-btn secondary">Learn More</a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-number">100+</span>
+                    <span class="stat-label">Happy Customers</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">5+</span>
+                    <span class="stat-label">Unique Flavors</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">5⭐</span>
+                    <span class="stat-label">Rating</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <span>Scroll to explore</span>
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <header class="main-header">
+        <div class="header-container">
+            <div class="logo-container">
+                <img src="logo.png" alt="FLUFFILAS Logo" class="logo">
+                <span class="logo-text">FLUFFILAS</span>
+            </div>
+            
+            <nav class="main-nav">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#menu" class="nav-link">Menu</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+
+            <div class="header-actions">
+                <button class="search-btn" aria-label="Search">
+                    <i class="fas fa-search"></i>
+                </button>
+                <button class="cart-btn" aria-label="Cart">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </button>
+                <button class="mobile-menu-btn" aria-label="Menu">
+                    <span class="hamburger"></span>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Mobile Navigation -->
+        <div class="mobile-nav">
+            <a href="#home" class="mobile-nav-link">Home</a>
+            <a href="#menu" class="mobile-nav-link">Menu</a>
+            <a href="#about" class="mobile-nav-link">About</a>
+            <a href="#contact" class="mobile-nav-link">Contact</a>
+        </div>
+    </header>
+
+    <main>
+        <section id="menu" class="menu">
+            <div class="section-header">
+                <span class="section-subtitle">Our Creations</span>
+                <h2 class="section-title">Signature Desserts</h2>
+                <p class="section-description">Discover our handcrafted FLUFFILAS, made with love and the finest ingredients</p>
+            </div>
+            
+            <div class="carousel-container">
+                <button class="carousel-btn prev" onclick="moveCarousel(-1)" aria-label="Previous">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <div class="desserts-carousel">
+                    <div class="desserts">
+                        <div class="dessert-card" data-aos="fade-up" data-aos-delay="0">
+                            <div class="card-badge">Best Seller</div>
+                            <div class="card-image-wrapper">
+                                <img src="fluf/choc-fluf.png" alt="Chocolate FLUFFILAS" class="dessert-image">
+                            </div>
+                            <div class="card-content">
+                                <h3>Chocolate FLUFFILAS</h3>
+                                <p>Chocolate Pastillias with creamy marshmallow filling</p>
+                                <div class="card-footer">
+                                    <span class="price">₱140</span>
+                                    <button class="add-to-cart">
+                                        <i class="fas fa-plus"></i> Add
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dessert-card" data-aos="fade-up" data-aos-delay="100">
+                            <div class="card-badge">New</div>
+                            <div class="card-image-wrapper">
+                                <img src="fluf/straw-fluff.png" alt="Strawberry FLUFFILAS" class="dessert-image">
+                            </div>
+                            <div class="card-content">
+                                <h3>Strawberry FLUFFILAS</h3>
+                                <p>Sweet and creamy strawberry-flavored FLUFFILAS</p>
+                                <div class="card-footer">
+                                    <span class="price">₱145</span>
+                                    <button class="add-to-cart">
+                                        <i class="fas fa-plus"></i> Add
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dessert-card" data-aos="fade-up" data-aos-delay="200">
+                            <div class="card-image-wrapper">
+                                <img src="fluf/ube-fluf.png" alt="Ube FLUFFILAS" class="dessert-image">
+                            </div>
+                            <div class="card-content">
+                                <h3>Ube FLUFFILAS</h3>
+                                <p>Ube Pastillias with a creamy ube filling</p>
+                                <div class="card-footer">
+                                    <span class="price">₱120</span>
+                                    <button class="add-to-cart">
+                                        <i class="fas fa-plus"></i> Add
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dessert-card" data-aos="fade-up" data-aos-delay="300">
+                            <div class="card-badge popular">Popular</div>
+                            <div class="card-image-wrapper">
+                                <img src="fluf/orig-fluff.png" alt="Classic FLUFFILAS" class="dessert-image">
+                            </div>
+                            <div class="card-content">
+                                <h3>Classic FLUFFILAS</h3>
+                                <p>Original Fluffias with perfect balance of sweetness</p>
+                                <div class="card-footer">
+                                    <span class="price">₱150</span>
+                                    <button class="add-to-cart">
+                                        <i class="fas fa-plus"></i> Add
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-btn next" onclick="moveCarousel(1)" aria-label="Next">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <div class="about-container">
+                <div class="about-image-wrapper">
+                    <div class="about-image">
+                        <img src="fluf/about-fluf.png" alt="About FLUFFILAS">
+                        <div class="about-image-accent"></div>
+                    </div>
+
+                </div>
+                <div class="about-content">
+                    <span class="section-subtitle">Our Story</span>
+                    <h2 class="section-title">Crafting Sweet Memories Since 2025</h2>
+                    <p class="about-lead">Welcome to FLUFFILAS, where we craft the finest desserts with love and premium ingredients. Every bite is a celebration of sweetness!</p>
+                    <p>Our journey started in 2025 with a simple goal: making desserts that make people happy. From a small home kitchen, we’ve grown into a favorite dessert spot for many customers.</p>
+                    
+                    <div class="about-process">
+                        <div class="process-step">
+                            <div class="process-icon">
+                                <i class="fas fa-hand-holding-heart"></i>
+                            </div>
+                            <div class="process-text">
+                                <h4>Handcrafted with Love</h4>
+                                <p>Every FLUFFILA is made by hand with care</p>
+                            </div>
+                        </div>
+                        <div class="process-step">
+                            <div class="process-icon">
+                                <i class="fas fa-leaf"></i>
+                            </div>
+                            <div class="process-text">
+                                <h4>100% Natural Ingredients</h4>
+                                <p>We use only the finest natural ingredients</p>
+                            </div>
+                        </div>
+                        <div class="process-step">
+                            <div class="process-icon">
+                                <i class="fas fa-award"></i>
+                            </div>
+                            <div class="process-text">
+                                <h4>Award-Winning Recipes</h4>
+                                <p>Our unique recipes have won hearts</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="about-features">
+                        <div class="feature">
+                            <i class="fas fa-leaf"></i>
+                            <span>100% Natural</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-heart"></i>
+                            <span>Handcrafted</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-star"></i>
+                            <span>Premium Quality</span>
+                        </div>
+                    </div>
+                    
+                    <a href="#menu" class="about-cta">
+                        <span>Explore Our Menu</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <div class="section-header">
+                <span class="section-subtitle">Get In Touch</span>
+                <h2 class="section-title">Contact Us</h2>
+                <p class="section-description">We'd love to hear from you. Send us a message!</p>
+            </div>
+            
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="info-content">
+                            <h3>Visit Us</h3>
+                            <p>123 Dessert Street<br>Sweet City, SC 12345</p>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div class="info-content">
+                            <h3>Call Us</h3>
+                            <p>(555) 123-4567</p>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="info-content">
+                            <h3>Email Us</h3>
+                            <p>info@FLUFFILAS.com</p>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="info-content">
+                            <h3>Hours</h3>
+                            <p>Mon-Sat: 9AM - 8PM<br>Sun: 10AM - 6PM</p>
+                        </div>
+                    </div>
+                    
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+                
+                <div class="contact-form-wrapper">
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" required placeholder="">
+                            <label for="name">Your Name</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" required placeholder="">
+                            <label for="email">Your Email</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="phone" name="phone" placeholder="">
+                            <label for="phone">Your Phone</label>
+                        </div>
+                        <div class="form-group">
+                            <select id="subject" name="subject">
+                                <option value="">Select Subject</option>
+                                <option value="order">Order Inquiry</option>
+                                <option value="feedback">Feedback</option>
+                                <option value="partnership">Partnership</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" rows="5" required placeholder=""></textarea>
+                            <label for="message">Your Message</label>
+                        </div>
+                        <button type="submit" class="submit-btn">
+                            <span>Send Message</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <img src="logo.png" alt="FLUFFILAS Logo" class="footer-logo">
+                <h3>FLUFFILAS</h3>
+                <p>Delicious desserts crafted with love</p>
+                <div class="footer-social">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-hours">
+                <h4>Business Hours</h4>
+                <ul>
+                    <li><span>Monday - Saturday</span><span>9:00 AM - 8:00 PM</span></li>
+                    <li><span>Sunday</span><span>10:00 AM - 6:00 PM</span></li>
+                </ul>
+            </div>
+            
+            <div class="footer-newsletter">
+                <h4>Stay Updated</h4>
+                <p>Subscribe for exclusive offers and updates</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="">
+                    <button type="submit"><i class="fas fa-arrow-right"></i></button>
+                </form>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2026 FLUFFILAS Dessert Store. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+        const mobileNav = document.querySelector('.mobile-nav');
+        
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileNav.classList.toggle('active');
+            mobileMenuBtn.classList.toggle('active');
+        });
+
+        // Close mobile menu when clicking a link
+        document.querySelectorAll('.mobile-nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileNav.classList.remove('active');
+                mobileMenuBtn.classList.remove('active');
+            });
+        });
+
+        // Carousel Functionality
+        let currentSlide = 0;
+
+        function moveCarousel(direction) {
+            const desserts = document.querySelector('.desserts');
+            const cards = document.querySelectorAll('.dessert-card');
+            const cardWidth = cards[0].offsetWidth + 30;
+            
+            currentSlide += direction;
+            
+            if (currentSlide < 0) {
+                currentSlide = cards.length - 1;
+            } else if (currentSlide >= cards.length) {
+                currentSlide = 0;
+            }
+            
+            const visibleCards = window.innerWidth > 768 ? 3 : 1;
+            const maxSlide = Math.max(0, cards.length - visibleCards);
+            currentSlide = Math.min(currentSlide, maxSlide);
+            
+            desserts.style.transform = `translateX(-${currentSlide * cardWidth}px)`;
+        }
+
+        // Add to Cart functionality
+        document.querySelectorAll('.add-to-cart').forEach(btn => {
+            btn.addEventListener('click', function() {
+                const cartCount = document.querySelector('.cart-count');
+                let count = parseInt(cartCount.textContent);
+                cartCount.textContent = count + 1;
+                
+                // Animation
+                this.innerHTML = '<i class="fas fa-check"></i> Added';
+                this.classList.add('added');
+                
+                setTimeout(() => {
+                    this.innerHTML = '<i class="fas fa-plus"></i> Add';
+                    this.classList.remove('added');
+                }, 1500);
+            });
+        });
+
+        // Form submission
+        document.querySelector('.contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you for your message! We will get back to you soon.');
+            this.reset();
+        });
+
+        // Newsletter form
+        document.querySelector('.newsletter-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const input = this.querySelector('input');
+            if (input.value) {
+                alert('Thank you for subscribing!');
+                input.value = '';
+            }
+        });
+
+        // Scroll Animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animated');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.dessert-card, .info-card, .about-content').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Active nav link on scroll
+        const sections = document.querySelectorAll('section');
+        const navLinks = document.querySelectorAll('.nav-link');
+
+        window.addEventListener('scroll', () => {
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (scrollY >= sectionTop - 200) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href').slice(1) === current) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
